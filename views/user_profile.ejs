@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="<%= assetPath("/css/user_profile.css") %>">
+<% if (profile_user.name == "Vanshika Bhatnagar") { %> 
+	<center><img src="<%= assetPath("/avatar/avatar2.jpeg") %>" alt="<%= user.name %>" width="100"></center>
+	<% } else { %> 
+		<center><img src="<%= assetPath("/avatar/avatar1.jpeg") %>" alt="<%= user.name %>" width="100"></center>
+		<% } %>
+
+<% if (user.id == profile_user.id) { %> 
+	<!-- if user mathches then show the form -->
+	<form action="/users/update/<%= profile_user.id %>" method="POST" enctype="multipart/form-data" id="profileform">
+		<input type="text" name="name" value="<%= user.name %>" placeholder="Your Name" required id="namebox">
+		<input type="email" name="email" value="<%= user.email %>" placeholder="Your Email" required id="emailbox">
+		
+		<!-- <input type="file" name="avatar" placeholder="Profile Picture"> -->
+		
+		<input type="submit" value="Update" id="updatebutton">
+	</form>
+<% } else { %> 
+	<!-- else show profile info -->
+	<div class="para">
+	<p id="profilename"><%= profile_user.name %></p>
+	<p id="profileemail"><%= profile_user.email %></p>
+	</div>
+<% } %>

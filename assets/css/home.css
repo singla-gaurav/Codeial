@@ -1,0 +1,80 @@
+#home-container {
+  display: flex; 
+}
+  #home-container #feed-posts {
+    width: 70%;
+    padding: 10px; }
+    #home-container #feed-posts #display-post li p:not(:last-child){
+      border: none;
+      padding:1rem;
+      background-color: rgba(255,255,255,0.3);
+      border-left: 3px solid rgb(227, 80, 17);
+       }
+    #home-container #feed-posts #display-post .post-comments li p{
+      border: none;
+      padding:1rem;
+      background-color: rgba(255,255,255,0.3);
+      border-left: 3px solid blue;
+       }
+    #home-container #feed-posts #new-posts textarea {
+      font-size: 1.1rem;
+    width: 70%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  resize: none;
+    } 
+    #home-container #feed-posts #new-posts #post-button {
+      color: white;
+      font-weight: 500;
+      margin-left: 30px;
+      background-color: blue;
+      border-radius: 30px;
+      height: 2rem;
+      width: 5rem;
+      font-size: 1.1rem; 
+    }
+  #home-container #user-friends {
+    width: 30%;
+    padding: 10px;
+    border-left: 1px solid #c0c0c0;
+    min-height: 78vh; 
+  }
+  #home-container #user-friends a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+small{
+  color:rgb(160, 160, 160);
+  font-style: italic;
+}
+
+ .fa-thumbs-up:before {
+  content: "\f164";
+  color: blue;
+}
+ul{
+  list-style-type: none;
+}
+#comment-box{
+  font-size: 1rem;
+  width: 70%;
+height: 50px;
+padding: 12px 20px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 10px;
+background-color: #f8f8f8;
+}
+#comment-button{
+  color: white;
+      font-weight: 500;
+      margin-left: 30px;
+      background-color: #437cf7;
+      border-radius: 30px;
+      height: 2rem;
+      width: 8rem;
+      font-size: 1rem; 
+}

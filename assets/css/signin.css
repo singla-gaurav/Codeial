@@ -1,0 +1,27 @@
+#signin{
+    display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#email-box,#password{
+    font-size: 1rem;
+    width: 50%;
+  height: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  margin: 10px;
+}
+#signinbutton{
+  color: white;
+  font-weight: 500;
+  margin-left: 30px;
+  background-color: #437cf7;
+  border-radius: 30px;
+  height: 2rem;
+  width: 8rem;
+  font-size: 1rem; 
+}

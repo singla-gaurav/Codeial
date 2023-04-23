@@ -1,0 +1,10 @@
+<h1 align="center">Sign In</h1>
+<link rel="stylesheet" href="<%= assetPath("/css/signin.css") %>">
+<form action="/users/create-session" method="post" id="signin">
+    <input type="email" name="email" placeholder="Your Email" required id="email-box">
+    <input type="password" name="password" placeholder="Your Password" id="password">
+    <p align="center">
+        <a href="/users/auth/google">Google Sign In</a>
+    </p>
+    <input type="submit" value="Sign In" id="signinbutton">
+</form>
